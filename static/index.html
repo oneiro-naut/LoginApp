@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="http://localhost:3000/app.css">
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <script src="http://localhost:3000/app.js"></script>
+    <title>MyApp - Login</title></head>
+<body>
+<div id="login-wrapper" class="user-form-container">
+<form method="post" id="user-form" action='javascript:void(0);' onsubmit='doLogin(this);' accept-charset="utf-8">
+<div class="user-form-label"><label for="username">Username</label></div>    
+<div class="user-form-input"><input type="text" id="username" name="username"></div>
+<div class="user-form-label"><label for="password">Password</label></div>
+<div class="user-form-input"><input type="password" id="password" name="password"></div>
+<div class="submit-button"><input type="submit" id="login-submit" name="login-submit" value="Login"></div>
+<div class="register-link-wrapper">Don't have an account? <a href="http://127.0.0.1:3000/register.html">Register</a></div>
+</form>
+</div>
+</body>
+</html>
