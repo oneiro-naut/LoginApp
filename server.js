@@ -42,8 +42,9 @@ function serveStaticContent(req, res, path)
     {
         res.writeHead(301, {
             Location: 'http://'+serverHostname+':'+serverPort+defaultPage
-          }).end();
-        return;
+          })
+        res.end()
+        return
     }
     let resourcePath = staticContentDirPath + (path != '/' ? path : defaultPage)
     let extension = resourcePath.split('.').pop()
